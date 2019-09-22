@@ -6,9 +6,11 @@ import com.ic211.project2.part1.Caesar;
  * This class provides implementation for a caesar shift encryption and decryption.
  */
 public class ShiftCaesar extends ShiftEncalg {
-
-    public ShiftCaesar(char[] key) {
-        super(key);
-        encryptor = new Caesar(key);
-    }
+	/**
+	 * @param key The password to use for the <code>Encryptor</code> in the hashing algorithm.
+	 */
+	public ShiftCaesar(char[] key) {
+		super(key);
+		encryptor = new Caesar(key);
+	}
 }

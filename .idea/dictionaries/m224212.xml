@@ -2,6 +2,7 @@
   <dictionary name="m224212">
     <words>
       <w>ciphertext</w>
+      <w>encalg</w>
       <w>encryptor</w>
       <w>hasher</w>
       <w>hashers</w>

@@ -12,14 +12,11 @@ public class TestHashers {
 		//String encalg = System.console().readLine();
 		System.out.print("password : ");
 		String password = sc.nextLine();
-		//char[] password = System.console().readPassword();
-		//System.out.print("message  : ");
-		//String plaintext = sc.nextLine();
-		//String plaintext = System.console().readLine();
+		//String password = new String(System.console().readPassword());
 
 		Hasher hasher = HasherFactory.getHasher(encalg, password.toCharArray());
 
-		// Encrypt, decrypt print summary of results
+		// Hash and print summary of results
 		String hash = hasher.hash(password);
 		System.out.println("password read : " + password);
 		//System.out.println("cipher: " + ciphertext);
